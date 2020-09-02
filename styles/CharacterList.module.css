@@ -1,0 +1,65 @@
+.starWarsTable {
+    color: #a5a596;
+    width: 100%;
+    border-collapse: collapse;
+}
+.starWarsTable th{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.starWarsTable tr{;
+    border-bottom: 2px solid #ddd;
+}
+.starWarsTable tr:first-child, .starWarsTable th{
+    border-bottom: 2px solid #6678b1;
+}
+.starWarsTableRow:nth-child(odd){
+    background-color: rgba(76, 90, 90, 0.8)
+}
+.starWarsTableRow:nth-child(even){
+    background-color: rgba(50, 60, 90, 0.8);
+}
+.starWarsTableRow:nth-child:hover(odd){
+    background-color: rgba(76, 90, 90, 1)
+}
+.starWarsTableRow:nth-child:hover(even){
+    background-color: rgba(50, 60, 90, 1);
+
+}
+.starWarsTableRow:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+.starWarsTableLabel {
+    display: block;
+}
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    .starWarsTable, .starWarsTable tr, .starWarsTable th, .starWarsTable td, .starWarsTable tbody {
+        display: block;
+    }
+
+    .starWarsTable tbody, .starWarsTable td{
+        width: 100%;
+    }
+
+    .starWarsTable th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .starWarsTable tr { border: 1px solid #ddd; }
+
+    .starWarsTable td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+    .starWarsTable td span:nth-of-type(2) {
+        font-weight: bold;
+        color: #ffffff;
+    }
+}
